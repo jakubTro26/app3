@@ -32,7 +32,7 @@
     
     $ids = get_products_ids("https://api.baselinker.com/connector.php",$idArray);
 
-    var_dump($productIdsArray);
+    
 
     getInventoryCategories();
 
@@ -236,7 +236,7 @@ $response = curl_exec($curl);
                         ];
 
 
-                       // var_dump($methodParams);
+                        var_dump($methodParams);
 
 
                         $options = array(
