@@ -260,7 +260,7 @@ $response = curl_exec($curl);
 
                         $content  = curl_exec($ch);
 
-
+                        echo 'content';
                         var_dump($content);
 
                         $PHPcontent = json_decode($content);
