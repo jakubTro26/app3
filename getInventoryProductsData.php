@@ -29,8 +29,10 @@
     $categoryArray=[];
     $producentArray=[];
    
-    var_dump('kuba');
+    
     $ids = get_products_ids("https://api.baselinker.com/connector.php",$idArray);
+
+    var_dump($productIdsArray);
 
     getInventoryCategories();
 
