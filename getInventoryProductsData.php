@@ -235,7 +235,7 @@ $response = curl_exec($curl);
 
 
                         $options = array(
-                            CURLOPT_RETURNTRANSFER => true,   // return web page
+                            CURLOPT_RETURNTRANSFER => false,   // return web page
                             CURLOPT_HEADER         => false,  // don't return headers
                             CURLOPT_FOLLOWLOCATION => true,   // follow redirects
                             CURLOPT_MAXREDIRS      => 10,     // stop after 10 redirects
@@ -254,6 +254,9 @@ $response = curl_exec($curl);
                         curl_setopt_array($ch, $options);
 
                         $content  = curl_exec($ch);
+
+
+                        var_dump($content);
 
                         $PHPcontent = json_decode($content);
 
@@ -410,8 +413,7 @@ $response = curl_exec($curl);
         //echo '<xmp>'. $dom->saveXML() .'</xmp>';
         $written = $dom->save('/home/master/applications/ancccjahdh/public_html/result.xml') or die('XML Create Error');
 
-        echo 'zapisano';
-        var_dump($written);
+      
 
         $filepathname = "../result.xml";
         $target = "1";
