@@ -236,7 +236,7 @@ $response = curl_exec($curl);
                         ];
 
 
-                        var_dump($methodParams);
+                       
 
 
                         $options = array(
@@ -261,7 +261,7 @@ $response = curl_exec($curl);
                         $content  = curl_exec($ch);
 
 
-                       
+                        var_dump($content);
 
                         $PHPcontent = json_decode($content);
 
