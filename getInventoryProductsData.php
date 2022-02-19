@@ -234,6 +234,9 @@ $response = curl_exec($curl);
                         ];
 
 
+                        var_dump($methodParams);
+
+
                         $options = array(
                             CURLOPT_RETURNTRANSFER => false,   // return web page
                             CURLOPT_HEADER         => false,  // don't return headers
@@ -256,7 +259,7 @@ $response = curl_exec($curl);
                         $content  = curl_exec($ch);
 
 
-                        var_dump($content);
+                       
 
                         $PHPcontent = json_decode($content);
 
