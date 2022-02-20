@@ -417,6 +417,7 @@ $response = curl_exec($curl);
                        
                         curl_close($ch);
                         var_dump($ch);
+                        echo 'ch';
                        
             }
         }
