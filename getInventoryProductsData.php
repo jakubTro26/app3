@@ -214,7 +214,7 @@ $response = curl_exec($curl);
         for($i=0;$i<count($ids);$i++){
             
 
-       
+            var_dump( $i);
             
             $array1 = array_values($ids)[$i];
 
@@ -235,7 +235,7 @@ $response = curl_exec($curl);
                             "parameters" => $methodParams
                         ];
 
-                        var_dump( $methodParams);
+                       
                     
 
 
