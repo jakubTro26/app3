@@ -23,7 +23,7 @@
 //  72 - Katalog domy\u015blny
 //  1184 - Akord hurtownia
 
-
+    echo 'before';
    
 
     $categoryArray=[];
@@ -260,7 +260,7 @@ $response = curl_exec($curl);
 
                         $ch = curl_init($url);
                         
-                        print 'this is printed';
+                     
                         curl_setopt_array($ch, $options);
 
                         $content  = curl_exec($ch);
