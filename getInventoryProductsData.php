@@ -24,7 +24,7 @@
 //  1184 - Akord hurtownia
 
 
-
+    echo 'kuba';
 
     $categoryArray=[];
     $producentArray=[];
