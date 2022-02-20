@@ -213,7 +213,6 @@ $response = curl_exec($curl);
 
         for($i=0;$i<count($ids);$i++){
             
-            echo 'kuba';
             
             
             $array1 = array_values($ids)[$i];
@@ -415,8 +414,9 @@ $response = curl_exec($curl);
                        }
 
                        // $array1 = array_keys(get_object_vars($PHPcontent->products));
-                       
+                        $written = $dom->save('/home/master/applications/ancccjahdh/public_html/result.xml') or die('XML Create Error');
                         curl_close($ch);
+                        echo 'kuba';
                        
                           
             }
@@ -424,7 +424,7 @@ $response = curl_exec($curl);
         }
         
         //echo '<xmp>'. $dom->saveXML() .'</xmp>';
-        $written = $dom->save('/home/master/applications/ancccjahdh/public_html/result.xml') or die('XML Create Error');
+        
 
        
 
