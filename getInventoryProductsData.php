@@ -407,10 +407,7 @@ $response = curl_exec($curl);
 
 
                               
-                              if(curl_error($ch)) {
-                                $error =  curl_errno($ch)." : ". curl_error($ch);
-                                
-                            }
+                         
                              
 
                             
@@ -428,7 +425,7 @@ $response = curl_exec($curl);
            
         }
         
-        //echo '<xmp>'. $dom->saveXML() .'</xmp>';
+        echo '<xmp>'. $dom->saveXML() .'</xmp>';
         
 
         $written = $dom->save('/home/master/applications/ancccjahdh/public_html/result.xml') or die('XML Create Error');
