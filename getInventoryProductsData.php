@@ -420,11 +420,11 @@ $response = curl_exec($curl);
                        
             }
         }
-
+        echo 'ch';
         //echo '<xmp>'. $dom->saveXML() .'</xmp>';
         $written = $dom->save('/home/master/applications/ancccjahdh/public_html/result.xml') or die('XML Create Error');
 
-        echo 'ch';
+       
 
         $filepathname = "../result.xml";
         $target = "1";
