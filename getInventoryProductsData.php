@@ -191,7 +191,8 @@ $response = curl_exec($curl);
 
  function get_products_data($url,$ids) {
 
-        
+        global $k;
+        $k=0;
         global $producentArray;
         global $categoryArray;
         $keys =   array_keys($ids);
@@ -221,7 +222,7 @@ $response = curl_exec($curl);
                 
            
                 
-
+                    $k=$k+1;
 
              $category= str_replace('category', '', $keys[$i]);
      
@@ -416,7 +417,7 @@ $response = curl_exec($curl);
                        // $array1 = array_keys(get_object_vars($PHPcontent->products));
                        
                         curl_close($ch);
-                       echo 'closed';
+                       echo $k;
                           
             }
            
