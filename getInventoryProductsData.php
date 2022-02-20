@@ -213,7 +213,7 @@ $response = curl_exec($curl);
 
         for($i=0;$i<count($ids);$i++){
             
-
+            echo 'kuba';
             
             
             $array1 = array_values($ids)[$i];
@@ -259,8 +259,8 @@ $response = curl_exec($curl);
                         ); 
 
                         $ch = curl_init($url);
-                       echo 'kuba';
-                       echo $ch;
+                      
+                      
                      
                         curl_setopt_array($ch, $options);
 
