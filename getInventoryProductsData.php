@@ -221,7 +221,7 @@ $response = curl_exec($curl);
             for($o=0;$o<count(array_values($ids)[$i]);$o++){
                 
            
-                echo $o . ' ';
+               
                     
 
              $category= str_replace('category', '', $keys[$i]);
