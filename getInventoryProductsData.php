@@ -219,8 +219,11 @@ $response = curl_exec($curl);
             $array1 = array_values($ids)[$i];
 
             for($o=0;$o<count(array_values($ids)[$i]);$o++){
-                var_dump( $o);
+                
            
+                var_dump( $o);
+
+
              $category= str_replace('category', '', $keys[$i]);
      
                
