@@ -259,6 +259,7 @@ $response = curl_exec($curl);
 
                         $ch = curl_init($url);
                         
+                        var_dump($ch);
                      
                         curl_setopt_array($ch, $options);
 
