@@ -1,6 +1,6 @@
 <?php
 
-
+    echo 'kuba';
     $idArray=['801','712','716','741','715','886','714','813','880','713','867','742','796','868','788','72','1184'];
 //kubssa
 
@@ -258,8 +258,7 @@ $response = curl_exec($curl);
                         ); 
 
                         $ch = curl_init($url);
-                        echo 'ch';
-                        var_dump($ch);
+                       
                      
                         curl_setopt_array($ch, $options);
 
