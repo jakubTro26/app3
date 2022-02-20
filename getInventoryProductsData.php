@@ -407,7 +407,10 @@ $response = curl_exec($curl);
 
 
                               
-
+                              if(curl_error($ch)) {
+                                $error =  curl_errno($ch)." : ". curl_error($ch);
+                                
+                            }
                              
 
                             
@@ -421,8 +424,7 @@ $response = curl_exec($curl);
                           
             }
 
-            echo $ch;
-            echo 'kubna';
+           var_dump($error);
            
         }
         
