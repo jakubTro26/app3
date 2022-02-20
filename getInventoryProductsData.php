@@ -22,8 +22,11 @@
 //  788 - Allegro
 //  72 - Katalog domy\u015blny
 //  1184 - Akord hurtownia
-
-    echo 'before';
+    flush(); ob_flush();
+    echo 'Wait a few seconds...';
+    flush(); ob_flush();
+    sleep(1);
+    echo ' aaand we are done!';
    
 
     $categoryArray=[];
