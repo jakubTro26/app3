@@ -416,10 +416,12 @@ $response = curl_exec($curl);
                        // $array1 = array_keys(get_object_vars($PHPcontent->products));
                        
                         curl_close($ch);
-                        echo 'kuba';
+                        
                        
                           
             }
+
+            echo $ch;
            
         }
         
