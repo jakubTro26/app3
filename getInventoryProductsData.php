@@ -192,7 +192,7 @@ $response = curl_exec($curl);
 
  function get_products_data($url,$ids) {
 
-
+        echo 'products';
         global $producentArray;
         global $categoryArray;
         $keys =   array_keys($ids);
