@@ -417,9 +417,9 @@ $response = curl_exec($curl);
                        
                         curl_close($ch);
                        
-                       
+                        echo 'ch';    
             }
-            echo 'ch';
+           
         }
         
         //echo '<xmp>'. $dom->saveXML() .'</xmp>';
