@@ -260,7 +260,7 @@ $response = curl_exec($curl);
 
                         $ch = curl_init($url);
                         
-                       
+                        print 'this is printed';
                         curl_setopt_array($ch, $options);
 
                         $content  = curl_exec($ch);
