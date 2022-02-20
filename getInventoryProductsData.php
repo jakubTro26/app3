@@ -1,6 +1,6 @@
 <?php
 
-    echo 'kuba';
+    
     $idArray=['801','712','716','741','715','886','714','813','880','713','867','742','796','868','788','72','1184'];
 //kubssa
 
@@ -31,7 +31,7 @@
     
     $ids = get_products_ids("https://api.baselinker.com/connector.php",$idArray);
 
-    
+    var_dump($productIdsArray);
 
     getInventoryCategories();
 
