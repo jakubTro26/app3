@@ -221,7 +221,7 @@ $response = curl_exec($curl);
             for($o=0;$o<count(array_values($ids)[$i]);$o++){
                 
            
-                var_dump( $o);
+                
 
 
              $category= str_replace('category', '', $keys[$i]);
@@ -259,8 +259,8 @@ $response = curl_exec($curl);
                         ); 
 
                         $ch = curl_init($url);
-                        echo 'curlinit';
-                        var_dump($ch);
+                        
+                        
                         curl_setopt_array($ch, $options);
 
                         $content  = curl_exec($ch);
@@ -416,6 +416,7 @@ $response = curl_exec($curl);
                        // $array1 = array_keys(get_object_vars($PHPcontent->products));
                        
                         curl_close($ch);
+                        echo 'curlclosed';
             }
         }
 
