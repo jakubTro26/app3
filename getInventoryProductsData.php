@@ -259,7 +259,7 @@ $response = curl_exec($curl);
                         ); 
 
                         $ch = curl_init($url);
-                       
+                       echo 'kuba';
                        echo $ch;
                      
                         curl_setopt_array($ch, $options);
