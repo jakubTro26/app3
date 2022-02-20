@@ -417,14 +417,14 @@ $response = curl_exec($curl);
                        }
 
                        // $array1 = array_keys(get_object_vars($PHPcontent->products));
-                       
+                       var_dump($error);
                         curl_close($ch);
                         
                        
                           
             }
 
-           var_dump($error);
+         
            
         }
         
