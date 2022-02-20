@@ -416,8 +416,7 @@ $response = curl_exec($curl);
                        // $array1 = array_keys(get_object_vars($PHPcontent->products));
                        
                         curl_close($ch);
-                        var_dump($ch);
-                        echo 'ch';
+                       
                        
             }
         }
@@ -425,7 +424,7 @@ $response = curl_exec($curl);
         //echo '<xmp>'. $dom->saveXML() .'</xmp>';
         $written = $dom->save('/home/master/applications/ancccjahdh/public_html/result.xml') or die('XML Create Error');
 
-        
+        echo 'ch';
 
         $filepathname = "../result.xml";
         $target = "1";
