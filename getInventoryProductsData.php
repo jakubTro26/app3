@@ -213,7 +213,7 @@ $response = curl_exec($curl);
 
         for($i=0;$i<count($ids);$i++){
             
-            
+            var_dump($keys[$i]);
             
             $array1 = array_values($ids)[$i];
 
