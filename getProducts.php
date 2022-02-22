@@ -1,7 +1,7 @@
 <?php
 //plik
 
-
+echo 'kuba';
 
 
 ?>
